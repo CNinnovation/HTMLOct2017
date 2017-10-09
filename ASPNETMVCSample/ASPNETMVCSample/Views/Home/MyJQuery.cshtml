@@ -1,0 +1,29 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MyJQuery</title>
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script>
+        $(function () {
+            $("#button1").click(function () {
+                $("#output").load("/Home/Sample1");
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="button1">Click Me!</button>
+    <div>
+        <ul id="output">
+
+        </ul>
+    </div>
+</body>
+</html>
