@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Scripts/jquery-3.2.1.js"></script>
+    <script>
+        //$(document).ready(function () {
+        //    $("#button1").click()
+        //});
+
+        $(function () {
+            $("#button1").click(function () {
+                alert("button clicked");
+            });
+
+            $("#output").load("/mydata")
+        });
+
+        window.onload = function () {
+            var x = document.getElementById("button2");
+
+            x.click = function () {
+                alert("button clicked");
+            }
+
+
+        }
+    </script>
+</head>
+<body>
+    <h1>Hello, HTML</h1>
+    <input id="button1" type="button" value="Click me!" />
+    <input id="button2" type="button" value="Click me!" />
+
+    <div id="output"></div>
+</body>
+</html>
