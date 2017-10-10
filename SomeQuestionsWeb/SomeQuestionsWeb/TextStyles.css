@@ -1,0 +1,11 @@
+﻿body {
+}
+
+::first-letter {
+    font-size: 48px;
+    color:darkblue;
+}
+
+::selection {
+    color: yellow;
+}
